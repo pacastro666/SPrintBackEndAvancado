@@ -1,0 +1,32 @@
+PARA CRIAR IMAGENS 
+docker-compose up --build
+
+
+1. Parar os containers em execução:
+Para parar todos os containers que estão rodando, utilize o seguinte comando:
+docker-compose down
+
+2. Excluir containers, imagens e volumes (limpeza completa):
+Se você deseja também remover todas as imagens e volumes criados, utilize o comando abaixo:
+
+docker-compose down --volumes --rmi all
+
+LISTAR OS CONTAINERES
+docker ps -a
+
+1. Parar e remover todos os containers:
+Para garantir que todos os containers, tanto rodando quanto parados, sejam removidos, use o seguinte comando:
+
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+
+
+2. Remover imagens antigas:
+Para remover as imagens Docker criadas anteriormente (como nextjs-app, backend-django, etc.), use:
+
+docker rmi $(docker images -q)
+
+
+caso haja a necessidade deve rodar a instalacao de pacotes individualmente se o docker composer nao conseguir instalar
+
+
