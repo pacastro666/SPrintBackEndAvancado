@@ -1,0 +1,14 @@
+# Ignorar arquivos do Node.js (frontend)
+frontendNextJs/node_modules/
+frontendNextJs/.next/
+frontendNextJs/.env
+
+# Ignorar arquivos de Python (backend)
+backendMicroservicos/venv/
+backendMicroservicos/__pycache__/
+backendMicroservicos/db.sqlite3
+backendMicroservicos/.env
+
+# Ignorar arquivos gerais do sistema
+.DS_Store
+Thumbs.db
